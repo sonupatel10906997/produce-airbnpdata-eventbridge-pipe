@@ -1,0 +1,6 @@
+{"environmentVariablesOverride": [
+  {"name":"MY_VAR","type":"PLAINTEXT","value":"foo"},
+  {"name":"MY_DYNAMIC_VAR","type":"PLAINTEXT","value":<detail-type>}]
+}
+
+
