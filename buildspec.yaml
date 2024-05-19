@@ -1,0 +1,21 @@
+version: 0.2
+  batch:
+    fast-fail: false
+    build-list:
+      - identifier: build1
+        env:
+          variables:
+            BUILD_ID: build1
+        ignore-failure: false
+      - identifier: build2
+        buildspec: build2.yml
+        env:
+          variables:
+            BUILD_ID: build2
+        ignore-failure: true
+
+env:
+  variables:
+    AWS_ACCESS_KEY_ID: "your-access-key-id"
+    AWS_SECRET_ACCESS_KEY: "your-secret-access-key"
+    AWS_DEFAULT_REGION: "your-default-region"
